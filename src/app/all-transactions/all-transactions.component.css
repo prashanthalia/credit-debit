@@ -1,0 +1,49 @@
+body{
+    font-family: cursive;
+}
+
+
+.main{
+	padding:30px;
+}
+
+.align_button button {
+    width: 47%;
+    float: left;
+    margin-left: 0px;
+    margin-right: 9px;
+    margin-top: 19px;
+	background-color: #e5e5e5;
+	
+}
+.align_button{
+	padding-left:53%;
+}
+.tab-content{
+	border-left:1px solid #bcaeae;
+	border-right:1px solid #bcaeae;
+	border-bottom:1px solid #bcaeae;
+}
+/* .inside{
+	padding:20px;
+} */
+.inside .card{
+	width: 100%;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#myTab .nav-item{
+   width: 9%;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #e5e5e5;
+    border: 1px solid gray;
+    /* color: black; */
+    font-weight: bold;
+}
+#myTab .nav-item a{
+	color:black;
+	font-weight:bold;
+}

@@ -1,0 +1,26 @@
+<div class="container-fluid" style="margin-top:30px">
+    <div class="row" style="font-family: cursive;"> 
+    
+    <div  class="col-md-4 row-fluid card text-black bg-white mb-3" style="max-width: 20rem; display: flex;border-color:1px solid grey;
+      flex-wrap: wrap;flex-direction: row;margin-left:10px" *ngFor="let x of creditTransactions">
+        <div class="card-body" >
+          <h5 class="card-title">{{x.description}}</h5>
+          <p class="card-text text-black" *ngIf="x.type == 'debit'">Balance Rs:{{account.startingBalace}}</p>
+          <p class="card-text text-black" *ngIf="x.type == 'credit'">Balance Rs:{{account.startingBalace}}</p>
+          <h3 *ngIf="x.type == 'debit'">Rs: -{{x.amount}}</h3>
+          <h3 *ngIf="x.type == 'credit'">Rs: +{{x.amount}}</h3>
+        </div>
+      </div>
+      <div  class="col-md-4 row-fluid card text-black bg-white mb-3" style="max-width: 20rem; display: flex;border-color:1px solid grey;
+      flex-wrap: wrap;flex-direction: row;margin-left:10px" *ngFor="let x of debitTransactions">
+        <div class="card-body" >
+          <h5 class="card-title">{{x.description}}</h5>
+          <p class="card-text text-black" *ngIf="x.type == 'debit'">Balance Rs:{{account.startingBalace}}</p>
+          <p class="card-text text-black" *ngIf="x.type == 'credit'">Balance Rs:{{account.startingBalace}}</p>
+          <h3 *ngIf="x.type == 'debit'">Rs: -{{x.amount}}</h3>
+          <h3 *ngIf="x.type == 'credit'">Rs: +{{x.amount}}</h3>
+        </div>
+      </div>
+    
+    </div>
+        </div>
